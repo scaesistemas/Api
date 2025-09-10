@@ -1,0 +1,10 @@
+﻿using SCAE.Domain.Entities.Empreendimento;
+using SCAE.Service.Interfaces.Shared;
+
+namespace SCAE.Service.Interfaces.Empreendimento
+{
+    public interface ITipoUnidadeService : IQueryService<TipoUnidade>
+    {
+
+    }
+}

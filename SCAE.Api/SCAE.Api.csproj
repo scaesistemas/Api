@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <UserSecretsId>91e71b9b-b10a-4520-9534-b838512fa13d</UserSecretsId>
+    <ContainerRepository>scae-api</ContainerRepository>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>SCAE.Api.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>SCAE.Api.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\Geral\NovaPasta\**" />
+    <Content Remove="Controllers\Geral\NovaPasta\**" />
+    <EmbeddedResource Remove="Controllers\Geral\NovaPasta\**" />
+    <None Remove="Controllers\Geral\NovaPasta\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\Base\AdiantamentoCarteiraController.cs" />
+    <Compile Remove="Controllers\Base\ContratoAdiantamentoController.cs" />
+    <Compile Remove="Models\Clientes\ContratoDetalhadoModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties/launchSettings.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="itext7" Version="9.0.0" />
+    <PackageReference Include="itext7.bouncy-castle-adapter" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="8.0.4" NoWarn="NU1605" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.OData" Version="8.2.5" />
+    <PackageReference Include="Microsoft.AspNetCore.OData.NewtonsoftJson" Version="8.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Sentry.AspNetCore" Version="5.11.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SCAE.Domain\SCAE.Domain.csproj" />
+    <ProjectReference Include="..\SCAE.Framework\SCAE.Framework.csproj" />
+    <ProjectReference Include="..\SCAE.Service\SCAE.Service.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\Empreendimento\" />
+    <Content Include="Fonts\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Logos\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

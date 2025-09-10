@@ -1,0 +1,4 @@
+﻿SCAE - Olá $cliente_nome$, seu boleto está disponível!
+Segue o código de barras: $linha_digitavel$
+
+

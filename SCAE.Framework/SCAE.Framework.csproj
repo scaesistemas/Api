@@ -1,0 +1,76 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>SCAE.Framework.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>SCAE.Framework.xml</DocumentationFile>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="EPPlus" Version="7.1.1" />
+    <PackageReference Include="IdentityModel" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="8.0.4" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Update="Template\Cobranca\Template01.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Template\Cobranca\Template02.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Template\Cobranca\Template03.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Template\Cobranca\Template04.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Template\Cobranca\Template05.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Template\Cobranca\Template06.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Template\Cobranca\Template07.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Template\Cobranca\Template08.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Template\Cobranca\Template09.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Template\Cobranca\Template10.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Template\Cobranca\Template11.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Template\Cobranca\Template12.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+	<None Update="Template\Cobranca\Template13.html">
+		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Template\Cobranca\Template14.html">
+		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	  <None Update="Template\Cobranca\TemplateSms13.txt">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Template\Cobranca\TemplateSms14.txt">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+    <None Update="Template\TemplateEmailScae.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

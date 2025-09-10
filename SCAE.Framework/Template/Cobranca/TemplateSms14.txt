@@ -1,0 +1,2 @@
+﻿SCAE - Olá $cliente_nome$,sua prestação com venc. $dataVencimento$ não consta como paga.
+Dúvidas: $empresa_numero$ | $empresa_email$

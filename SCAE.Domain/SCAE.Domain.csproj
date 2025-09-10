@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\Clientes\NovaPasta\**" />
+    <EmbeddedResource Remove="Models\Clientes\NovaPasta\**" />
+    <None Remove="Models\Clientes\NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\GalaxPay\ChargeEditarModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SCAE.Framework\SCAE.Framework.csproj" />
+  </ItemGroup>
+
+</Project>

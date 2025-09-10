@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SCAE.Domain.Clientes.Contrato">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACQAAAAEBBUAAAEAAAQAEGAAEgERAAAABACgABIwQ=</HashCode>
+      <FileName>Clientes\Contrato.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Lote" />
+      <Property Name="Imovel" />
+      <Property Name="Tipo" />
+      <Property Name="TipoProduto" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SCAE.Domain.Clientes.ContratoCliente" Collapsed="true">
+    <Position X="4.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAACAAABCAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Clientes\ContratoCliente.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SCAE.Domain.Clientes.Imovel" Collapsed="true">
+    <Position X="4.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Clientes\Imovel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SCAE.Domain.Loteamento.Lote" Collapsed="true">
+    <Position X="4.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACEEAQEAgAACCAAAAAAARAAgCgACiAAAIBAAEAgAM=</HashCode>
+      <FileName>Loteamento\Lote.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SCAE.Domain.Clientes.TipoContrato" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAEIAAA=</HashCode>
+      <FileName>Clientes\TipoContrato.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TipoOperacao" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SCAE.Domain.Financeiro.Despesa" Collapsed="true">
+    <Position X="0.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACAgAAAAGAACEAEAgAAIAOAgQABIACAAICAAAAAgQ=</HashCode>
+      <FileName>Financeiro\Despesa.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.1" />
+  </Class>
+  <Class Name="SCAE.Domain.Clientes.TipoProdutoContrato" Collapsed="true">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACQAAAAAAAAAAAAAAAAAAAAAAwAAAAAEAAAAEAAAA=</HashCode>
+      <FileName>Clientes\TipoProdutoContrato.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SCAE.Domain.Clientes.TipoOperacaoContrato" Collapsed="true">
+    <Position X="8.25" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAQAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAA=</HashCode>
+      <FileName>Clientes\TipoOperacaoContrato.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SCAE.Domain.Clientes.ContratoVistoria" Collapsed="true">
+    <Position X="4.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCAAAAAAAAASAEAAAAAIAAAAAAABAAAAACAAAAAgA=</HashCode>
+      <FileName>Clientes\ContratoVistoria.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SCAE.Domain.Loteamento.Lote_Proprietario" Collapsed="true">
+    <Position X="8.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACQAAAAACAAgAAAAAAAAAAAAAAAEAAAAAACAAAAgA=</HashCode>
+      <FileName>Loteamento\Lote_Proprietario.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SCAE.Domain.Clientes.ImovelProprietario" Collapsed="true">
+    <Position X="8.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAACBAAAAAAAAAAAAAAAgAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Clientes\ImovelProprietario.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SCAE.Domain.Clientes.ContratoVistoriaFoto" Collapsed="true">
+    <Position X="8.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAABAAIAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Clientes\ContratoVistoriaFoto.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SCAE.Domain.Financeiro.Receita" Collapsed="true">
+    <Position X="0.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACAgAAAACAACAAABiAAIAGAgQABAACAAIAAAAAAgQ=</HashCode>
+      <FileName>Financeiro\Receita.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.1" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

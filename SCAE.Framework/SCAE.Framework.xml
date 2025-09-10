@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SCAE.Framework</name>
+    </assembly>
+    <members>
+        <member name="T:SCAE.Framework.Attributes.RequiredIfAttribute">
+            <summary>
+            Fornece validação condicional com base no valor da propriedade relacionada.
+            </summary>
+        </member>
+        <member name="P:SCAE.Framework.Attributes.RequiredIfAttribute.OtherProperty">
+            <summary>
+            Obtém ou define o nome da outra propriedade que será usada durante a validação.
+            </summary>
+            <value>
+            O nome da outra propriedade.
+            </value>
+        </member>
+        <member name="P:SCAE.Framework.Attributes.RequiredIfAttribute.OtherPropertyDisplayName">
+            <summary>
+            Obtém ou define o nome de exibição da outra propriedade.
+            </summary>
+            <value>
+            O nome de exibição da outra propriedade.
+            </value>
+        </member>
+        <member name="P:SCAE.Framework.Attributes.RequiredIfAttribute.OtherPropertyValue">
+            <summary>
+            Obtém ou define o valor da outra propriedade que será relevante para a validação.
+            </summary>
+            <value>
+            O valor da outra propriedade.
+            </value>
+        </member>
+        <member name="P:SCAE.Framework.Attributes.RequiredIfAttribute.IsInverted">
+            <summary>
+            Obtém ou define um valor que indica se o valor da outra propriedade deve ser igual ou diferente do valor da outra propriedade fornecida (o padrão é <c>false</c>).
+            </summary>
+            <value>
+              <c>true</c> se a validação do valor da outra propriedade deve ser invertida; caso contrário, <c>false</c>.
+            </value>
+            <remarks>
+            Como isso funciona
+            - true: a propriedade validada é necessária quando o valor da outra propriedade não é igual ao valor fornecido
+            - false: a propriedade validada é necessária quando o valor da outra propriedade é igual ao valor fornecido
+            </remarks>
+        </member>
+        <member name="P:SCAE.Framework.Attributes.RequiredIfAttribute.RequiresValidationContext">
+            <summary>
+            Obtém um valor que indica se o atributo requer contexto de validação.
+            </summary>
+            <returns><c>true</c> se o atributo requer contexto de validação; caso contrário, <c>false</c>.</returns>
+        </member>
+        <member name="M:SCAE.Framework.Attributes.RequiredIfAttribute.#ctor(System.String,System.Object)">
+            <summary>
+            Inicializa uma nova instância da classe <see cref="T:SCAE.Framework.Attributes.RequiredIfAttribute"/>.
+            </summary>
+            <param name="otherProperty">A outra propriedade.</param>
+            <param name="otherPropertyValue">O valor da outra propriedade.</param>
+        </member>
+        <member name="M:SCAE.Framework.Attributes.RequiredIfAttribute.FormatErrorMessage(System.String)">
+            <summary>
+            Aplica formatação a uma mensagem de erro, com base no campo de dados onde ocorreu o erro.
+            </summary>
+            <param name="name">O nome a incluir na mensagem formatada.</param>
+            <returns>
+            Uma instância da mensagem de erro formatada.
+            </returns>
+        </member>
+        <member name="M:SCAE.Framework.Attributes.RequiredIfAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            Valida o valor especificado em relação ao atributo de validação atual.
+            </summary>
+            <param name="value">O valor a ser validado.</param>
+            <param name="validationContext">As informações de contexto sobre a operação de validação.</param>
+            <returns>
+            Uma instância do <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult" /> class.
+            </returns>
+        </member>
+        <member name="P:SCAE.Framework.Domain.UrlQueryPagination.Page">
+            <summary>Número da página a ser listada</summary>
+        </member>
+        <member name="P:SCAE.Framework.Domain.UrlQueryPagination.PageSize">
+            <summary>Tamanho de registros que a página terá. (O padrão é 25)</summary>
+        </member>
+        <member name="P:SCAE.Framework.Domain.UrlQueryPagination.SortBy">
+            <summary>Nome do campo que será ordenado</summary>
+        </member>
+        <member name="P:SCAE.Framework.Domain.UrlQueryPagination.SortDesc">
+            <summary>Responsável por definir se a ordenação será decrescente</summary>
+        </member>
+        <member name="M:SCAE.Framework.Helper.CnpjCpfHelper.FormataCNPJ(System.String)">
+            <summary>
+            Formatar uma string CNPJ
+            </summary>
+            <param name="cnpj">string CNPJ sem formatacao</param>
+            <returns>string CNPJ formatada</returns>
+            <example>Recebe '99999999999999' Devolve '99.999.999/9999-99'</example>
+        </member>
+        <member name="M:SCAE.Framework.Helper.CnpjCpfHelper.FormataCPF(System.String)">
+            <summary>
+            Formatar uma string CPF
+            </summary>
+            <param name="cpf">string CPF sem formatacao</param>
+            <returns>string CPF formatada</returns>
+            <example>Recebe '99999999999' Devolve '999.999.999-99'</example>
+        </member>
+        <member name="M:SCAE.Framework.Helper.CnpjCpfHelper.Formata(System.String)">
+            <summary>
+            Formatar uma string CNPJ ou CPF (que será dectada automaticamente)
+            </summary>
+            <param name="cnpjCpf">string CNPJ ou CPF sem formatacao</param>
+            <returns>string CNPJ ou CPF formatada</returns>
+            <example>Recebe '99999999999' Devolve '999.999.999-99' ou '99999999999999' Devolve '99.999.999/9999-99'</example>
+        </member>
+        <member name="M:SCAE.Framework.Helper.ExcelHelper.GetList``1(OfficeOpenXml.ExcelWorksheet,System.Collections.Generic.List{System.String},System.Int32,System.Int32)">
+            <summary>
+            Sem problema com colunas de mesmo nome
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="sheet"></param>
+            <param name="mapeamento"></param>
+            <param name="cabecalho"></param>
+            <param name="conteudo"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

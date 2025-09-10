@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SCAE.Api</name>
+    </assembly>
+    <members>
+        <member name="M:SCAE.Api.Controllers.Geral.LogController.Post(SCAE.Domain.Entities.Geral.Log)">
+            <response code="201"> Operação realizada com sucesso! </response>
+            <response code="400"> Erros de validação do objeto. </response>
+            <response code="500"> Algum erro o ocorreu! -> **Detalhamento da aplicação referente ao erro** </response>
+            <param name="model"> Objeto com os dados a serem incluído. </param>
+        </member>
+        <member name="M:SCAE.Api.Controllers.Geral.LogController.GetCobranca(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean})">
+            <summary>
+            </summary>
+            <response code="200"> Operação realizada com sucesso! </response>
+            <response code="400"> Erros de validação dos parâmetros. </response>
+            <response code="500"> Algum erro ocorreu! -> **Detalhamento da aplicação referente ao erro** </response>
+            <param name="dataHoraInicial"> Data e hora inicial para consulta. </param>
+            <param name="dataHoraFinal"> Data e hora final para consulta. </param>
+            <param name="assinanteId"> ID do assinante (opcional). </param>
+            <param name="parcelaId"> ID da parcela (opcional). </param>
+            <param name="transacaoId"> ID da transação (opcional). </param>
+            <param name="erro"> Filtrar apenas erros (opcional). </param>
+            <param name="isCobranca"> Filtrar logs de cobrança (opcional). </param>
+            <param name="isBaixa"> Filtrar logs de baixa (opcional). </param>
+            <param name="isEmissaoBoleto"> Filtrar logs de emissão de boleto (opcional). </param>
+            <param name="isCancelamento"> Filtrar logs de cancelamento (opcional). </param>
+            <param name="isCRM"> Filtrar logs de CRM (opcional). </param>
+        </member>
+        <member name="M:SCAE.Api.Controllers.MasterCrudController`1.Post(`0)">
+            <response code="201"> Operação realizada com sucesso! </response>
+            <response code="400"> Erros de validação do objeto. </response>
+            <response code="500"> Algum erro o ocorreu! -> **Detalhamento da aplicação referente ao erro** </response>
+            <param name="model"> Objeto com os dados a serem incluído. </param>
+        </member>
+        <member name="M:SCAE.Api.Controllers.MasterCrudController`1.Put(System.Int32,`0)">
+            <response code="200"> Operação realizada com sucesso! </response>
+            <response code="400"> Id informado é diferente do objeto a ser alterado! </response>
+            <response code="404"> Registro não encontrado! </response>
+            <response code="500"> Algum erro o ocorreu! -> **Detalhamento da aplicação referente ao erro** </response>
+            <param name="id"> Id do objeto que deseja alterar. </param>
+            <param name="model"> Objeto com os dados completo (alterados e não alterados). </param>
+        </member>
+        <member name="M:SCAE.Api.Controllers.MasterCrudController`1.Delete(System.Int32)">
+            <response code="200"> Operação realizada com sucesso! </response>
+            <response code="404"> Registro não encontrado! </response>
+            <response code="500"> Algum erro o ocorreu! -> **Detalhamento da aplicação referente ao erro** </response>
+            <param name="id"> Id do objeto que deseja excluir. </param>
+        </member>
+        <member name="M:SCAE.Api.Controllers.MasterCrudController`1.Patch(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{`0})">
+            <response code="200"> Operação realizada com sucesso! </response>
+            <response code="400"> Id informado é diferente do objeto a ser alterado! </response>
+            <response code="404"> Registro não encontrado! </response>
+            <response code="500"> Algum erro o ocorreu! -> **Detalhamento da aplicação referente ao erro** </response>
+            <param name="id"> Id do objeto que deseja alterar. </param>
+            <param name="model"> Objeto com os dados completo (alterados e não alterados). </param>
+        </member>
+        <member name="M:SCAE.Api.Controllers.MasterQueryController`1.Get(Microsoft.AspNetCore.OData.Query.ODataQueryOptions{`0},System.String)">
+            <response code="200"> Consulta realizada com sucesso! </response>
+            <response code="500"> Algum erro o ocorreu! -> **Detalhamento da aplicação referente ao erro** </response>
+            <param name="options">Opções de parâmetros de consulta, que podem ser omitidos ou combinados: 
+            $select => Filtra as propriedades (colunas). /usuario?$select=id,nome
+            $orderby => Ordena os resultados. (pode acompanhar desc para descrecente no final) /usuario?$orderby=nome desc
+            $skip => Índices em um conjunto de resultados.Também usado por algumas APIs para implementar a paginação e pode ser usado com $top para paginar. /usuario?$skip=2
+            $top => Define o tamanho de página de resultados. /usuario?$top=25
+            $filter => Filtra os resultados(linhas). /usuario?filter=nome eq 'admin'
+            Operadores Lógicos => igual a (eq) | não é igual a(ne) | maior que(gt) | maior ou igual a(ge) | menor que(lt), menor ou igual a(le) | e(and) | ou(or) | não(not) | contains(campo, 'valor')
+            </param>
+            <param name="include">Recupera os recursos relacionados. *Quando necessário, esse parametro deve ser informado no cabeçalho</param>
+        </member>
+        <member name="M:SCAE.Api.Controllers.MasterQueryController`1.GetById(System.Int32,System.String)">
+            <response code="200"> Consulta realizada com sucesso! </response>
+            <response code="404">Registro não encontrado!</response>
+            <response code="500"> Algum erro o ocorreu! -> **Detalhamento da aplicação referente ao erro** </response>
+            <param name="id"> Id do objeto que deseja buscar. </param>
+            <param name="include">Recupera os recursos relacionados. *Quando necessário, esse parametro deve ser informado no cabeçalho</param>
+        </member>
+        <member name="M:SCAE.Api.Controllers.OrcamentoObras.ModeloOrcamentoEtapaController.SalvarComoModelo(System.Int32,System.Int32)">
+            <summary>
+            Salva OrcamentoEtapa como ModeloOrcamentoEtapa
+            </summary>
+            <param name="orcamentoEtapaId">Id válido de OrcamentoEtapa no sistema</param>
+            <param name="estadoId">Id válido de Estado no sistema. Se não for informado, autmaticamente será preenchido com o Id de São Paulo</param>
+            <returns></returns>
+            stac
+        </member>
+    </members>
+</doc>

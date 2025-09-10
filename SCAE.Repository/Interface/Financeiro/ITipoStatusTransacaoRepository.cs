@@ -1,0 +1,10 @@
+using SCAE.Data.Interface.Shared;
+using SCAE.Domain.Entities.Financeiro;
+
+namespace SCAE.Data.Interface.Financeiro
+{
+    public interface ITipoStatusTransacaoRepository : ICrudRepository<TipoStatusTransacao>
+    {
+        
+    }
+}
