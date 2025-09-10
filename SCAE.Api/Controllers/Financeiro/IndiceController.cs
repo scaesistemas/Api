@@ -51,6 +51,7 @@ namespace SCAE.Api.Controllers.Financeiro
         {
             return base.Get(options, include);
         }
+        //payUs
         [CheckPermission(Permissoes.Financeiro_Indice_Listar)]
         public override Task<ActionResult<Indice>> GetById(int id, [FromHeader] string include)
         {
