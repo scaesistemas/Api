@@ -52,6 +52,7 @@ namespace SCAE.Api.Controllers.Financeiro
         {
             return base.Put(id, model);
         }
+        //corte
         [CheckPermission(Permissoes.Financeiro_Despesa_Excluir)]
         public override Task<IActionResult> Delete(int id)
         {
