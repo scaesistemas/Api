@@ -66,7 +66,7 @@ namespace SCAE.Api.Providers
                     return;
 
                 var identity = accessor.HttpContext.User;
-
+                //correção
                 SessionApp = new SessionAppModel(
                     int.Parse(identity.FindFirst(ClaimTypes.Upn).Value),
                     identity.FindFirst(ClaimTypes.NameIdentifier).Value,
