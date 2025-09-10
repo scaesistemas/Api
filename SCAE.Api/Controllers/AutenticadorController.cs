@@ -122,6 +122,7 @@ namespace SCAE.Api.Controllers
                     $"{MensagemHelper.AlgumErroOcorreu} {e.Message} - {e.InnerException?.Message}");
             }
         }
+        //autenticar
         [AllowAnonymous]
         [HttpPost("ConfirmarEmail")]        
         public async Task<ActionResult<string>> ConfirmarEmail(string token)
