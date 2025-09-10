@@ -96,7 +96,7 @@ namespace SCAE.Service.Services.Shared
                 ""
             );
         }
-
+        //alow
         public async Task EnviarEmail(string remetente, string remetenteNome, string destinatario, string assunto, string corpo, string clienteSMTP, int portaSMTP, bool usarSSL, string credencialUsuario, string credencialSenha)
         {
             if (string.IsNullOrEmpty(remetente))
