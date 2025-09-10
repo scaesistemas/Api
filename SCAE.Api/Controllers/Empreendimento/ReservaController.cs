@@ -39,7 +39,7 @@ namespace SCAE.Api.Controllers.Empreendimento
         {
             return base.Delete(id);
         }
-
+        //@
        // [CheckPermission(Permissoes.AreaCorretor_Reserva_Listar)]
         public override ActionResult<PageResult<Reserva>> Get(ODataQueryOptions<Reserva> options, [FromHeader] string include)
         {
