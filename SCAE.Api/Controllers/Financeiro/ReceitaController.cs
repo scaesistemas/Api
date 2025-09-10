@@ -68,6 +68,7 @@ namespace SCAE.Api.Controllers.Financeiro
         {
             return base.Get(options, include);
         }
+        //RAM
         [CheckPermission(Permissoes.Financeiro_Receita_Listar)]
         public override Task<ActionResult<Receita>> GetById(int id, [FromHeader] string include)
         {
