@@ -51,6 +51,7 @@ namespace SCAE.Api.Controllers.Financeiro
         {
             return base.Get(options, include);
         }
+        //CLT
         [AllowAnonymous]
         [CheckPermission(Permissoes.Financeiro_ContaCorrente_Listar)]
         public override Task<ActionResult<ContaCorrente>> GetById(int id, [FromHeader] string include)
